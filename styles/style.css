@@ -1,0 +1,59 @@
+.navbar .navbar-nav .nav-item .nav-link {
+    color: royalblue;
+    font-size: 1.0em;
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: royalblue;
+}
+
+.navbar .navbar-nav .nav-item .nav-link::after {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: royalblue;
+    color: transparent;
+    width: 0%;
+    content: '.';
+    height: 2px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link a:visited {
+    border-bottom: 20px solid royalblue;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover::after {
+    width: 90%;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    transition: margin-right 2s ease-in-out .5s;
+}
+
+select:checked {
+    background-color:gold;
+}
+
+/* DROPWDOWN STYLING */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  /* min-width: 160px; */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  font-size: 0.875rem;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
